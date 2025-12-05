@@ -5,10 +5,10 @@
 # If you fail, the festival cannot legally open.
 
 # Starting Data
-    # foods = ["pizza", "tacos", "bbq", "tacos", "sushi", "corn", "bbq", "ice cream"]
-    # stages = ("Main Stage", "Hip-Hop Zone", "Jazz Corner", "Indie Alley")
-    # restricted = {"glass bottles", "weapons", "alcohol", "alcohol"}
-    # attendance = [120, 130, 125, 145, 150, 148, 155, 160, 158, 162]
+foods = ["pizza", "tacos", "bbq", "tacos", "sushi", "corn", "bbq", "ice cream"]
+stages = ("Main Stage", "Hip-Hop Zone", "Jazz Corner", "Indie Alley")
+restricted = {"glass bottles", "weapons", "alcohol", "alcohol"}
+attendance = [120, 130, 125, 145, 150, 148, 155, 160, 158, 162]
 
 # Task 1 — Clean the Food Vendor List
     # 1. Remove duplicates while keeping only the first occurrence.
@@ -16,12 +16,18 @@
     # 3. Insert "smoothies" at index 2.
     # 4. Sort the list alphabetically.
     # 5. Print the final vendor list.
+foods_organized = []
+for item in foods:
+    if item not in foods_organized:
+        foods_organized.append(item)
+print(foods_organized)
 
 #Task 1.5 
     # combine all the list into a nested list called festival_data
     #print out the new nested list(use a for loop to print each item on a new line)
 
-
+festival_data = [foods, stages, attendance]
+print(festival_data)
 # Task 2 — Stage Map
     # 1. Print the second stage.
     # 2. Print the last two stages.
@@ -29,6 +35,7 @@
     # 4. Convert it back into a tuple.
     # 5. Print the updated tuple.
 
+print
 
 # Task 3 — Restricted Items
     # 1. Add "fireworks".
