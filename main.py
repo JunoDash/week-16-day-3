@@ -26,7 +26,7 @@ print(foods_organized)
     # combine all the list into a nested list called festival_data
     #print out the new nested list(use a for loop to print each item on a new line)
 
-festival_data = [foods, stages, attendance]
+festival_data = [foods_organized, stages, attendance]
 print(festival_data)
 # Task 2 — Stage Map
     # 1. Print the second stage.
