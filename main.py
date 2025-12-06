@@ -16,34 +16,55 @@ attendance = [120, 130, 125, 145, 150, 148, 155, 160, 158, 162]
     # 3. Insert "smoothies" at index 2.
     # 4. Sort the list alphabetically.
     # 5. Print the final vendor list.
-foods_organized = []
+temp = []
 for item in foods:
-    if item not in foods_organized:
-        foods_organized.append(item)
-print(foods_organized)
+    if item not in temp:
+        temp.append(item)
+foods = temp
 
+foods.append("ramen")
+foods.append("fried rice")
+foods.insert(2, "smoothies")
+foods.sort()
+print(foods)
 #Task 1.5 
     # combine all the list into a nested list called festival_data
     #print out the new nested list(use a for loop to print each item on a new line)
-
-festival_data = [foods_organized, stages, attendance]
-print(festival_data)
+festival_data = [foods, stages, attendance]
+for i in festival_data:
+    for x in i:
+        print(x, end=" ")
 # Task 2 — Stage Map
-    # 1. Print the second stage.
+    # 1. Print the second stage
+print(stages[1])
     # 2. Print the last two stages.
+print(stages[-1], stages[-2])
     # 3. Convert the tuple into a list and add "Rock Arena".
+temp = []
+for item in stages:
+    temp.append(item)
+stages = temp
+stages.append("Rock Arena")
     # 4. Convert it back into a tuple.
-    # 5. Print the updated tuple.
-
-print
+temp = []
+for item in stages:
+    temp.append(item)
+stages = temp
+# 5. Print the updated tuple.
+print(stages)
 
 # Task 3 — Restricted Items
     # 1. Add "fireworks".
-    # 2. Try adding "weapons" again.
+restricted.add("fireworks")
+    # 2. Try adding "weapons" again
+restricted.add("weapons")
     # 3. Remove "alcohol".
+restricted.discard("alcohol")
     # 4. Check if "glass bottles" is still restricted.
+if "glass bottles" in restricted:
+        print("Glass battles are still restricted.")
     # 5. Print the final restricted set.
-
+print(restricted)
 
 # Task 4 — Attendance Analysis
     # 1. Print the first three hours.
