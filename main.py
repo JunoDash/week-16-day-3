@@ -40,19 +40,12 @@ print(stages[1])
     # 2. Print the last two stages.
 print(stages[-1], stages[-2])
     # 3. Convert the tuple into a list and add "Rock Arena".
-temp = []
-for item in stages:
-    temp.append(item)
-stages = temp
+stages = list(stages)
 stages.append("Rock Arena")
     # 4. Convert it back into a tuple.
-temp = []
-for item in stages:
-    temp.append(item)
-stages = temp
+stages = tuple(stages)
 # 5. Print the updated tuple.
 print(stages)
-
 # Task 3 — Restricted Items
     # 1. Add "fireworks".
 restricted.add("fireworks")
@@ -65,15 +58,21 @@ if "glass bottles" in restricted:
         print("Glass battles are still restricted.")
     # 5. Print the final restricted set.
 print(restricted)
-
 # Task 4 — Attendance Analysis
     # 1. Print the first three hours.
+print(attendance[:3])
     # 2. Print the last hour.
+print(attendance[-1])
     # 3. Print every 2nd hour.
+print(attendance[::2])
     # 4. Remove the 5th hour using pop().
+attendance.pop(4)
     # 5. Add five projected values using extend(range(...)).
+attendance.extend(range(120, 125))
     # 6. Delete every 3rd value using del attendance[::3].
+del attendance[::3]
     # 7. Print the length and cleaned list.
+print(attendance)
 # Task 5 — Festival Master List
     # 1. Convert vendors, restricted set, and stages into lists.
     # 2. Combine everything into festival_data.
