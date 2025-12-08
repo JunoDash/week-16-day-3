@@ -75,10 +75,14 @@ del attendance[::3]
 print(attendance)
 # Task 5 — Festival Master List
     # 1. Convert vendors, restricted set, and stages into lists.
+stages = list(stages)
+restricted = list(restricted)
     # 2. Combine everything into festival_data.
+festival_data = [foods, stages, restricted, attendance]
     # 3. Print: total items, first 10, last 10.
-    # 4. Remove duplicates.
-    # 5. Print final cleaned festival_data.
+    # 4. Remove duplicates
 
+    # 5. Print final cleaned festival_data.
+print(festival_data)
 # Extension
 # Write a function festival_search(item) that returns True/False if item appears in festival_data.
